@@ -1,0 +1,110 @@
+.toolcontainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #1e88e5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.converter-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.converter-title {
+  color: #1e88e5;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  flex: 1;
+  min-width: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+select,
+.inputs {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.gobutton {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.result {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .toolcontainer {
+    padding: 20px;
+  }
+
+  .input-field {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhukka Notes - Share, discover and collaborate on academic notes. Access exclusive tools like GPA calculator, photo size reducer, and Nepali keyboard."
+    />
+    <meta
+      name="keywords"
+      content="notes sharing, academic notes, study resources, GPA calculator, Nepali keyboard"
+    />
+    <meta name="author" content="Bhukka Notes Team" />
+    <title>Bhukka Notes - Share Knowledge, Excel Together</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/imgreducer.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/CSS/common.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Bhukka Notes Logo" />
+
+          <h1>Bhukka Notes</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#notes">Notes</a></li>
+            <li><a href="/index.html#tools">Tools</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search notes..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="image-reducer-section">
+      <h1>Photo Size Reducer</h1>
+      <p class="description">
+        Easily resize your images while maintaining quality, making it feasible
+        to upload.
+      </p>
+      <div class="container">
+        <div class="upload-container" id="upload-area">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Drag & drop your image here</p>
+          <p>OR</p>
+          <span class="browse-btn">Browse Files</span>
+          <input type="file" id="file-input" accept="image/*" />
+        </div>
+
+        <div class="preview-container" id="preview-container">
+          <div class="image-preview">
+            <img id="preview-image" src alt="Preview" />
+          </div>
+
+          <div class="resize-controls">
+            <div class="control-group">
+              <label>Image Dimensions</label>
+              <div class="dimension-controls">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="width-input"
+                    placeholder="Width (px)"
+                  />
+                </div>
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="height-input"
+                    placeholder="Height (px)"
+                  />
+                </div>
+              </div>
+              <div class="maintain-ratio">
+                <input type="checkbox" id="maintain-ratio" checked />
+                <label for="maintain-ratio">Maintain aspect ratio</label>
+              </div>
+            </div>
+
+            <div class="control-group quality-container">
+              <label>Image Quality: <span id="quality-value">80%</span></label>
+              <input
+                type="range"
+                class="quality-slider"
+                id="quality-slider"
+                min="10"
+                max="100"
+                value="80"
+              />
+              <div class="quality-labels">
+                <span>Low</span>
+                <span>High</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="btn btn-secondary" id="reset-btn">Reset</button>
+            <button class="btn btn-primary" id="download-btn">
+              Download Image
+            </button>
+          </div>
+
+          <div class="file-info">
+            <div class="original-size">
+              <h3>Original Size</h3>
+              <p id="original-size">0 KB</p>
+            </div>
+            <div class="file-size">
+              <h3>New Size</h3>
+              <p id="new-size">0 KB</p>
+            </div>
+            <div class="reduction">
+              <h3>Reduction</h3>
+              <p id="reduction-percentage">0%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Bhukka Notes | <a href="#">Back to Home</a></p>
+    </footer>
+    <script src="/JS/imgreducer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /
+Allow: /index.html
+Allow: /notes-selection.html
+
+User-agent: *
+Disallow: /

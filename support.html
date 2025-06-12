@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhukka Notes - Share, discover and collaborate on academic notes. Access exclusive tools like GPA calculator, photo size reducer, and Nepali keyboard." />
+    <meta
+      name="keywords"
+      content="notes sharing, academic notes, study resources, GPA calculator, Nepali keyboard" />
+    <meta name="author" content="Bhukka Notes Team" />
+    <title>Bhukka Notes - Share Knowledge, Excel Together</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/common.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+  <style>
+    section{
+        /* height: 65vh; */
+        padding: 20px;
+        text-align: center;
+        margin-top: 80px;
+        /* background-color: #f9f9f9; */
+    }
+    section img{
+        width:200px;
+    }
+    section h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: var(--primary-blue);
+    }
+    section .subtitle{
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 20px;
+    }
+    section .p1{
+        font-size: 1.1em;
+        color: #555;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    section .p2{
+        font-size: 1em;
+        color: var(--primary-blue);
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    section a{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--primary-blue);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 150px;
+        transition: all 0.3s ease-in-out;
+    }
+    section a:hover {
+        background-color: #126dcf;
+        width: 170px;
+        color: white;
+        /* transform: translateX(-2px); */
+        transition: all 0.3s ease-in-out;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    footer{
+        margin-top: 25px;
+    }
+  </style>
+  </head>
+  <body class="home">
+    <!-- Header with Navigation -->
+    <header >
+      <div class="container header-container">
+        <div class="logo">
+          <img src="/images/logo.png" alt="Bhukka Notes Logo" />
+          <h2>Bhukka Notes</h2>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Note-Selection.html">Notes</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="support" href="support.html">Support Us</a></li>
+          </ul>
+          <!-- <div class="search-container">
+            <input type="text" placeholder="Search notes..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div> -->
+          <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Support Us</h1>
+            <br>
+            <img src="/images/support.png" alt="">
+            <p class="subtitle">Help us grow by sharing your notes and resources.</p>
+            <p class="p1">We are a community-driven platform, and your contributions make a difference. If you have academic notes, resources, or tools that can benefit others, please consider sharing them with us.</p>
+            <p class="p2">Use the link below to upload your notes:</p>
+            <a href="https://forms.gle/pieSrNgLb6EPDWLu7" class="button">Upload Notes</a>
+    </section>
+
+     <footer>
+    <p>© 2025 Bhukka Notes | <a href="#">Back to Home</a></p>
+  </footer>
+    <script>
+      // Mobile Menu Toggle
+      const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileNavToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        const icon = mobileNavToggle.querySelector("i");
+        if (icon.classList.contains("fa-bars")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      header {
+        width: 100%;
+        padding: 0px;
+      }
+      :root {
+        --primary-blue: #2563eb;
+        --primary-blue-light: #3b82f6;
+        --primary-blue-dark: #1d4ed8;
+        --secondary-blue: #60a5fa;
+        --accent-color: #10b981;
+        --accent-hover: #059669;
+        --dark-color: #1e293b;
+        --light-color: #f8fafc;
+        --gray-color: #94a3b8;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --background-primary: #ffffff;
+        --background-secondary: #f1f5f9;
+        --shadow-sm: 0 1px 2px 0 #0000000d;
+        --shadow-md: 0 4px 6px -1px #0000001a,0 2px 4px -1px #0000000f;
+        --shadow-lg: 0 10px 15px -3px #0000001a,0 4px 6px -2px #0000000d;
+        --gradient-blue: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+      }
+
+
+      body {
+        background-color: var(--background-secondary);
+        color: var(--text-primary);
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 40px 20px; */
+      }
+      .image-reducer-section {
+        margin-top: 50px;
+        width: 100%;
+        align-content: center;
+      }
+      .image-reducer-section .container {
+        width: 100%;
+        max-width: 800px;
+        background-color: var(--background-primary);
+        border-radius: 15px;
+        box-shadow: var(--shadow-md);
+        padding: 35px 30px;
+        margin-top: 20px;
+
+      }
+
+      h1 {
+        
+        text-align: center;
+        color: var(--primary-blue);
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+      }
+
+      .description {
+        text-align: center;
+        color: var(--text-secondary);
+        margin-bottom: 30px;
+      }
+
+      .upload-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-secondary);
+        border: 2px dashed var(--gray-color);
+        border-radius: 10px;
+        padding: 40px 20px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .upload-container:hover {
+        border-color: var(--primary-blue);
+        background-color: rgba(37, 99, 235, 0.05);
+      }
+
+      .upload-container i {
+        font-size: 3rem;
+        color: var(--primary-blue);
+        margin-bottom: 15px;
+      }
+
+      .upload-container p {
+        color: var(--text-secondary);
+        margin-bottom: 10px;
+      }
+
+      #file-input {
+        display: none;
+      }
+
+      .browse-btn {
+        background-color: var(--primary-blue);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .browse-btn:hover {
+        background-color: var(--primary-blue-dark);
+      }
+
+      .preview-container {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .image-preview {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .image-preview img {
+        width: 100%;
+        display: block;
+      }
+
+      .resize-controls {
+        margin-bottom: 30px;
+      }
+
+      .control-group {
+        margin-bottom: 15px;
+      }
+
+      .control-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+        font-weight: 500;
+      }
+
+      .dimension-controls {
+        display: flex;
+        gap: 15px;
+      }
+
+      .input-group {
+        flex: 1;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--gray-color);
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      .input-group input:focus {
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      }
+
+      .maintain-ratio {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .maintain-ratio input {
+        margin-right: 8px;
+      }
+
+      .quality-container {
+        margin-top: 20px;
+      }
+
+      .quality-slider {
+        width: 100%;
+      }
+
+      .quality-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+      }
+
+      .action-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+        outline: none;
+      }
+
+      .btn-primary {
+        background: var(--gradient-blue);
+        color: white;
+        box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.4);
+      }
+
+      .btn-secondary {
+        background-color: var(--light-color);
+        color: var(--text-primary);
+        border: 1px solid var(--gray-color);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--background-secondary);
+      }
+
+      .file-info {
+        margin-top: 25px;
+        padding: 15px;
+        background-color: var(--background-secondary);
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .file-info div {
+        text-align: center;
+        flex: 1;
+      }
+
+      .file-info h3 {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-bottom: 5px;
+      }
+
+      .file-info p {
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .file-info .file-size p {
+        color: var(--accent-color);
+      }
+
+      
+
+      @media (max-width: 640px) {
+        .dimension-controls {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .action-buttons {
+          flex-direction: column;
+        }
+
+        .file-info {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }

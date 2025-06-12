@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bhukka Notes - Educational Platform</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../CSS/lesson-selected.css">
+        <link rel="stylesheet" href="../CSS/navsearchfoot.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body);"></script>
+             <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+ </head>
+
+    <body class="mybody">
+        <header>
+            <div class="container">
+                <div class="header-content">
+
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="Bhukka Notes Logo" />
+                        <div class="logo-text"
+                            style="color: #1e88e5; font-size: 24px;">Bhukka
+                            Notes</div>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#" class="active">Notes</a></li>
+                        <li><a href="../index.html#tools">Tools</a></li>
+                    </ul>
+
+                    <div class="bars-search">
+                        <div class="search-container"
+                            style="position: relative;">
+                            <input type="text" id="search-input"
+                                placeholder="Search notes..." />
+                            <button id="search-button"><i
+                                    class="bi bi-search"></i></button>
+                        </div>
+
+                        <div onclick="toggleMobileMenu()" class="bars">
+                            <svg id="bars-icon" style="width:30px;height:30px"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                            </svg>
+                            <svg id="close-icon" class="dp-none"
+                                xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+                                    fill="#1e88e5" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-nav dp-none">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#" class="active">Notes</a></li>
+                <li><a href="../index.html#tools">Tools</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <div class="left"> <h2 class="subject-name">
+                    Optional Math
+                    <span class="view-all">
+                        <a href="../Note-Selection.html">View All &#10095;</a>
+                    </span>
+                </h2>
+                <ul class="lesson-list">
+                    <li>
+                        <span class="lesson-number">01</span>
+                        <a href="#lesson1">Function</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">02</span>
+                        <a href="#lesson2">Polynomials</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">03</span>
+                        <a href="#lesson3">Sequence and Series</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">04</span>
+                        <a href="#lesson4">Linear Programming</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">05</span>
+                        <a href="#lesson5">Quadratic Equations and Graphs</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">06</span>
+                        <a href="#lesson6">Continuity</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">07</span>
+                        <a href="#lesson7">Matrix</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">08</span>
+                        <a href="#lesson8">Coordinate Geometry</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">09</span>
+                        <a href="#lesson9">Trigonometry</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">10</span>
+                        <a href="#lesson10">Vector</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">11</span>
+                        <a href="#lesson11">Transformation</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">12</span>
+                        <a href="#lesson12">Statistics</a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="right">
+                <section id="lesson1">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.1</span></li>
+                        </ol>
+                    </nav>
+                    <article>
+                        <p class="lesson-title">Algebra: Function</p>
+                        <h2>Definitions to remember in this chapter.</h2>
+                       <img src="https://bhukka.sirv.com/Optional-Maths/1.1/image-holder1.png" alt="" class="float-img">
+                        <ul>
+                            <li>
+                                <p><strong>Algebraic function</strong>: The
+                                    algebraic equation consisting of at least
+                                    one variable is called the algebraic
+                                    function.</p>
+                            </li>
+                            <li>
+                                <p><strong>Linear function</strong>: A function
+                                    f is linear function if it can be written as
+                                    f(x)=mx+c, where m and c are constant.</p>
+                            </li>
+                            <li>
+                                <p><strong>Constant function</strong>: If m=0
+                                    the function is constant function and
+                                    written as f(x)=c.</p>
+                            </li>
+                            <li>
+                                <p><strong>Identity function</strong>: If m=1
+                                    and c=0, the function is the identity
+                                    function written as f(x)=x.</p>
+                            </li>
+                            <li>
+                                <p><strong>Quadratic function</strong>:
+                                    f(x)=ax<sup>2</sup>+bx+c, a&ne;0 is
+                                    quadratic function where a, b, and c are
+                                    real numbers.</p>
+                            </li>
+                            <li>
+                                <p><strong>Cubic function</strong>: The function
+                                    defined as
+                                    f(x)=ax<sup>3</sup>+bx<sup>2</sup>+cx+d,
+                                    a&ne;0 is called cubic function, where a, b,
+                                    c and d are real numbers.</p>
+                            </li>
+                            <li>
+                                <p><strong>Trigonometric function</strong>: The
+                                    function which relates angles and their
+                                    measurement to the real number is called
+                                    trigonometric function.</p>
+                            </li>
+                            <li>
+                                <p><strong>Composition of f and g</strong>: The
+                                    composition of f and g, is defined as
+                                    (f&#9702;g)(x) = f(g(x)): Where x is in the
+                                    domain of g and g(x) is in the domain of
+                                    f.</p>
+                            </li>
+                            <li>
+                                <p><strong>Composition of g and f</strong>:
+                                    (g&#9702;f) (x) = g(f(x)): Where x is in the
+                                    domain of f and f(x) is in the domain of
+                                    g.</p>
+                            </li>
+                            <li>
+                                <p><strong>Inverse function</strong>: A function
+                                    is called an inverse function if for every y
+                                    in the range of f, there is a unique x in
+                                    the domain of f such that f(x) = y.</p>
+                            </li>
+                            <li>
+                                <p><strong>Continuity of a function</strong>: A
+                                    function is said to be continuous at a point
+                                    if the graph of the function does not have
+                                    any break or gap at that point.</p>
+                            </li>
+                        </ul>
+
+                        <h2>Notes</h2>
+
+                        <ul>
+                            <li>
+                                <strong>Functions and Their
+                                    Types</strong>
+                                <ul>
+                                    <li><strong>Linear
+                                            function:</strong> f(x) = mx
+                                        + c</li>
+                                    <li><strong>Constant
+                                            function:</strong> f(x) =
+                                        c</li>
+                                    <li><strong>Identity
+                                            function:</strong> f(x) =
+                                        x</li>
+                                    <li><strong>Quadratic
+                                            function:</strong> f(x) =
+                                        ax<sup>2</sup> + bx + c,
+                                        <strong>a &ne; 0</strong></li>
+                                    <li><strong>Vertex form of
+                                            quadratic:</strong> f(x) =
+                                        a(x − h)<sup>2</sup> + k</li>
+                                    <li><strong>Cubic function:</strong>
+                                        f(x) = ax<sup>3</sup> +
+                                        bx<sup>2</sup> + cx + d,
+                                        <strong>a &ne; 0</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Trigonometric Functions</strong>
+                                <ul>
+                                    <li><strong>Sine:</strong> f(x) =
+                                        sin x</li>
+                                    <li><strong>Cosine:</strong> f(x) =
+                                        cos x</li>
+                                    <li><strong>Tangent:</strong> f(x) =
+                                        tan x</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Periodicity</strong>
+                                <ul>
+                                    <li><strong>sin(x + 2π) = sin
+                                            x</strong></li>
+                                    <li><strong>cos(x + 2π) = cos
+                                            x</strong></li>
+                                    <li><strong>tan(x + π) = tan
+                                            x</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Domain and Range</strong>
+                                <ul>
+                                    <li><strong>sin x, cos x:</strong>
+                                        −1 &le; y &le; 1</li>
+                                    <li><strong>tan x:</strong> −∞ &lt;
+                                        y &lt; ∞</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Periods</strong>
+                                <ul>
+                                    <li><strong>sin x, cos x:</strong>
+                                        2π</li>
+                                    <li><strong>tan x:</strong> π</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Composition of
+                                    Functions</strong>
+                                <ul>
+                                    <li><strong>(f &compfn; g)(x) =
+                                            f(g(x))</strong></li>
+                                    <li><strong>(g &compfn; f)(x) =
+                                            g(f(x))</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Examples of Function
+                                    Composition</strong>
+                                <ul>
+                                    <li>If <strong>f(x) = 3 +
+                                            2x</strong> and <strong>g(x)
+                                            = x<sup>2</sup> +
+                                            1</strong>:</li>
+                                    <ul>
+                                        <li><strong>(f &compfn; f)(x) =
+                                                4x + 9</strong></li>
+                                        <li><strong>(g &compfn; f)(x) =
+                                                4x<sup>2</sup> + 12x +
+                                                10</strong></li>
+                                        <li><strong>(f &compfn; g)(x) =
+                                                2x<sup>2</sup> +
+                                                5</strong></li>
+                                        <li><strong>(g &compfn; g)(x) =
+                                                x<sup>4</sup> +
+                                                2x<sup>2</sup> +
+                                                2</strong></li>
+                                    </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="has-images">
+
+                        <h2>Exercises</h2>
+                        <p class="centered">Here are the exclusive hand-written
+                            exercise for the chapter. <b></b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer1" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+
+                    </article>
+                </section>
+
+                <section id="lesson2">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.2</span></li>
+                        </ol>
+                    </nav>
+
+                    <article>
+                        <p class="lesson-title">Algebra: Polynomials</p>
+                        <h2>Definitions to remember in this chapter.</h2>
+
+                        <ul>
+                            <li><p><strong>Polynomial</strong> – An algebraic
+                                    expression composed of variables,
+                                    coefficients, and exponents.</p></li>
+                            <li><p><strong>Degree of a Polynomial</strong> – The
+                                    highest exponent in a polynomial
+                                    expression.</p></li>
+                            <li><p><strong>Monomial</strong> – A polynomial with
+                                    only one term.</p></li>
+                            <li><p><strong>Binomial</strong> – A polynomial with
+                                    two terms.</p></li>
+                            <li><p><strong>Trinomial</strong> – A polynomial
+                                    with three terms.</p></li>
+                            <li><p><strong>Factoring Polynomials</strong> –
+                                    Expressing a polynomial as a product of
+                                    simpler polynomials.</p></li>
+                            <li><p><strong>Remainder Theorem</strong> – If a
+                                    polynomial f(x) is divided by x - a, the
+                                    remainder is f(a).</p></li>
+                            <li><p><strong>Factor Theorem</strong> – If f(a) =
+                                    0, then (x - a) is a factor of the
+                                    polynomial.</p></li>
+                            <li><p><strong>Synthetic Division</strong> – A
+                                    shortcut method for polynomial
+                                    division.</p></li>
+                            <li><p><strong>Roots of a Polynomial</strong> – The
+                                    values of x that make the polynomial equal
+                                    to zero.</p></li>
+                        </ul>
+
+                        <h2>General Form of a Polynomial</h2>
+                        <p>A polynomial of degree $n$ is generally expressed
+                            as:</p>
+                        <p>$$P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_2 x^2
+                            + a_1 x + a_0$$</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>
+                                <p>$a_n, a_{n-1}, \dots, a_0$ are coefficients
+                                    (real or complex numbers).</p>
+                            </li>
+                            <li>
+                                <p>$a_n <> 0$ (for degree $n$).</p>
+                            </li>
+                            <li>
+                                <p>$x$ is the variable.</p>
+                            </li>
+                            <li>
+                                <p>$n$ is a non-negative integer, representing
+                                    the degree of the polynomial.</p>
+                            </li>
+                        </ul>
+
+                        <h2>Specific Polynomial Forms and Their Formulas</h2>
+                        <h3>1. Linear Polynomial (Degree 1)</h3>
+                        <ul>
+                            <li>
+                                <p>$P(x) = ax + b$, where $a <> 0$.</p>
+                            </li>
+                            <li>
+                                <p><b>Root</b>: $x = -\frac{b}{a}$</p>
+                            </li>
+                        </ul>
+
+                        <h3>2. Quadratic Polynomial (Degree 2)</h3>
+                        <ul>
+                            <li>
+                                <p>$P(x) = ax^2 + bx + c$, where $a <> 0$.</p>
+                            </li>
+                            <li>
+                                <p><b>Quadratic Formula (to find roots)</b>:</p>
+                                <p>$$x = \frac{-b \pm \sqrt{b^2 -
+                                    4ac}}{2a}$$</p>
+                            </li>
+                            <li>
+                                <p><b>Discriminant ($\Delta$ or $D$)</b>:
+                                    $\Delta = b^2 - 4ac$</p>
+                                <ul>
+                                    <li>
+                                        <p>If $\Delta > 0$, there are two
+                                            distinct real roots.</p>
+                                    </li>
+                                    <li>
+                                        <p>If $\Delta = 0$, there is exactly one
+                                            real root (a repeated root).</p>
+                                    </li>
+                                    <li>
+                                        <p>If $\Delta < 0$, there are two
+                                            distinct complex roots.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><b>Sum of Roots ($\alpha + \beta$)</b>:
+                                    $-\frac{b}{a}$</p>
+                            </li>
+                            <li>
+                                <p><b>Product of Roots ($\alpha \beta$)</b>:
+                                    $\frac{c}{a}$</p>
+                            </li>
+                        </ul>
+
+                        <h3>3. Cubic Polynomial (Degree 3)</h3>
+                        <ul>
+                            <li>
+                                <p>$P(x) = ax^3 + bx^2 + cx + d$, where $a <>
+                                    0$.</p>
+                            </li>
+                            <li>
+                                <p><b>Sum of Roots ($\alpha + \beta +
+                                        \gamma$)</b>: $-\frac{b}{a}$</p>
+                            </li>
+                            <li>
+                                <p><b>Sum of Products of Roots taken two at a
+                                        time ($\alpha\beta + \beta\gamma +
+                                        \gamma\alpha$)</b>: $\frac{c}{a}$</p>
+                            </li>
+                            <li>
+                                <p><b>Product of Roots
+                                        ($\alpha\beta\gamma$)</b>:
+                                    $-\frac{d}{a}$</p>
+                            </li>
+                            <li>
+                                <p><i>(Note: General formulas for finding roots
+                                        of cubic polynomials are more complex,
+                                        like Cardano's formula, and are
+                                        typically beyond introductory levels
+                                        unless specifically covered.)</i></p>
+                            </li>
+                        </ul>
+
+                        <h2>Identities for Factoring & Expanding
+                            Polynomials</h2>
+                        <ul>
+                            <li>
+                                <p><b>Difference of Squares</b>: $a^2 - b^2 = (a
+                                    - b)(a + b)$</p>
+                            </li>
+                            <li>
+                                <p><b>Perfect Square Trinomials</b>:</p>
+                                <ul>
+                                    <li>
+                                        <p>$(a + b)^2 = a^2 + 2ab + b^2$</p>
+                                    </li>
+                                    <li>
+                                        <p>$(a - b)^2 = a^2 - 2ab + b^2$</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><b>Sum of Cubes</b>: $a^3 + b^3 = (a + b)(a^2
+                                    - ab + b^2)$</p>
+                            </li>
+                            <li>
+                                <p><b>Difference of Cubes</b>: $a^3 - b^3 = (a -
+                                    b)(a^2 + ab + b^2)$</p>
+                            </li>
+                            <li>
+                                <p><b>Binomial Expansion (for
+                                        $(a+b)^n$)</b>:</p>
+                                <p>$$(a + b)^n = \sum_{k=0}^n \binom{n}{k}
+                                    a^{n-k} b^k$$</p>
+                                <p>Where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$
+                                    are binomial coefficients.</p>
+                                <ul>
+                                    <li>
+                                        <p>Example for n=3: $(a+b)^3 = a^3 +
+                                            3a^2b + 3ab^2 + b^3$</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="has-images">
+                        <h2>Exercises</h2>
+                        <p>Here are the exclusive hand-written
+                            exercise for the chapter. <b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer2" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+
+                    </article>
+                </section>
+
+                <section id="lesson3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.3</span></li>
+                        </ol>
+                    </nav>
+
+                    <article>
+                        <p class="lesson-title">Algebra: Sequence & Series</p>
+                        <h2>Definitions and formulae</h2>
+
+                        <h3>Arithmetic Progression (A.P.)</h3>
+                        <p>An arithmetic progression is a sequence of numbers
+                            such that the difference between consecutive terms
+                            is constant. This constant difference is called the
+                            <b>common difference</b>.</p>
+                        <ul>
+                            <li>
+                                <p><b>General form of an A.P.</b>: $a, a+d,
+                                    a+2d, a+3d, \dots$</p>
+                                <p>Where $a$ is the first term, and $d$ is the
+                                    common difference.</p>
+                            </li>
+                            <li>
+                                <p><b>Common Difference ($d$)</b>:</p>
+                                <p>$$d = a_2 - a_1 = a_3 - a_2 = \dots = a_n -
+                                    a_{n-1}$$</p>
+                            </li>
+                            <li>
+                                <p><b>$n$-th term of an A.P. ($a_n$)</b>:</p>
+                                <p>$$a_n = a + (n-1)d$$</p>
+                                <p>Where $a_n$ is the $n$-th term, $a$ is the
+                                    first term, $n$ is the number of terms, and
+                                    $d$ is the common difference.</p>
+                            </li>
+                            <li>
+                                <p><b>Sum of the first $n$ terms of an A.P.
+                                        ($S_n$)</b>:</p>
+                                <p>$$S_n = \frac{n}{2}[2a + (n-1)d]$$</p>
+                                <p>OR</p>
+                                <p>$$S_n = \frac{n}{2}(a + a_n)$$</p>
+                                <p>Where $S_n$ is the sum of the first $n$
+                                    terms, $a$ is the first term, $a_n$ is the
+                                    $n$-th term, $n$ is the number of terms, and
+                                    $d$ is the common difference.</p>
+                            </li>
+                            <li>
+                                <p><b>Arithmetic Mean (A.M.) between two numbers
+                                        $a$ and $b$</b>:</p>
+                                <p>$$\text{A.M.} = \frac{a+b}{2}$$</p>
+                            </li>
+                            <li>
+                                <p><b>Common Difference ($d$)</b>: $$d = \frac{b
+                                    - a}{n+1}$$</p>
+                            </li>
+                        </ul>
+
+                        <h3>Geometric Progression (G.P.)</h3>
+                        <p>A geometric progression is a sequence of numbers
+                            where each term after the first is found by
+                            multiplying the previous one by a fixed, non-zero
+                            number called the <b>common ratio</b>.</p>
+                        <ul>
+                            <li>
+                                <p><b>General form of a G.P.</b>: $a, ar, ar^2,
+                                    ar^3, \dots$</p>
+                                <p>Where $a$ is the first term, and $r$ is the
+                                    common ratio.</p>
+                            </li>
+                            <li>
+                                <p><b>Common Ratio ($r$)</b>:</p>
+                                <p>$$r = \frac{a_2}{a_1} = \frac{a_3}{a_2} =
+                                    \dots = \frac{a_n}{a_{n-1}}$$</p>
+                            </li>
+                            <li>
+                                <p><b>$n$-th term of a G.P. ($a_n$)</b>:</p>
+                                <p>$$a_n = ar^{n-1}$$</p>
+                                <p>Where $a_n$ is the $n$-th term, $a$ is the
+                                    first term, $n$ is the number of terms, and
+                                    $r$ is the common ratio.</p>
+                            </li>
+                            <li>
+                                <p><b>Sum of the first $n$ terms of a G.P.
+                                        ($S_n$)</b>:</p>
+                                <ul>
+                                    <li>
+                                        <p>If $r <> 1$:</p>
+
+                                        <p>$$S_n = \frac{a(r^n - 1)}{r - 1}
+                                            \quad \text{or} \quad S_n =
+                                            \frac{a(1 - r^n)}{1 - r}$$</p>
+                                    </li>
+                                    <li>
+                                        <p>If $r = 1$:</p>
+                                        <p>$$S_n = na$$</p>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <p><b>Geometric Mean (G.M.) between two
+                                            positive numbers $a$ and
+                                            $b$</b>:</p>
+                                    <p>$$\text{G.M.} = \sqrt{ab}$$</p>
+                                </li>
+                            </li>
+
+                            <li>
+                                <p><b>Common Ratio (\(r\))</b>: \( r = \left( \frac{b}{a} \right)^{\frac{1}{n+1}} \)</p>
+
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <article class="has-images">
+                        <h2>Exercises</h2>
+                        <p>Here are the exclusive hand-written
+                            exercise for the chapter. <b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer3" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+
+                    </article>
+                </section>
+
+                <section id="lesson4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.4</span></li>
+                        </ol>
+                    </nav>
+
+                    <article>
+                        <p class="lesson-title">Algebra: Linear Programming</p>
+                        <h2>Definitions and formulae</h2>
+
+                       <ul>
+  <li><p><strong>Linear Programming (L.P.):</strong> A mathematical method to determine the maximum or minimum value of a linear objective function, subject to a set of linear inequalities or equations (constraints).</p></li>
+
+  <li><p><strong>Decision Variables:</strong> The unknown non-negative variables (typically \( x, y \)) whose values are to be determined.</p></li>
+
+  <li><p><strong>Objective Function:</strong> A linear function like \( F = ax + by \), which is to be maximized or minimized.</p></li>
+
+  <li><p><strong>Constraints:</strong> The conditions (inequalities) imposed on the decision variables, such as \( x + y \leq 100 \), \( x \geq 0 \), \( y \geq 0 \).</p></li>
+
+  <li><p><strong>Feasible Region:</strong> The common solution area that satisfies all the constraints on a graph; often a convex polygon.</p></li>
+
+  <li><p><strong>Feasible Solution:</strong> Any point \( (x, y) \) within the feasible region that satisfies all constraints.</p></li>
+
+  <li><p><strong>Optimal Solution:</strong> The point in the feasible region that gives the maximum or minimum value of the objective function.</p></li>
+
+  <li><p><strong>Vertex Principle (Corner Point Method):</strong> The maximum or minimum value of the objective function always occurs at a vertex (corner) of the feasible region.</p></li>
+</ul>
+
+<ul>
+  <li>
+    <p><strong>Procedure to solve graphically:</strong></p>
+    <ul>
+      <li><p>Convert inequalities into equations.</p></li>
+      <li><p>Draw each boundary line.</p></li>
+      <li><p>Determine the feasible region (intersection area that satisfies all constraints).</p></li>
+      <li><p>Identify the vertices (corner points) of the region.</p></li>
+      <li><p>Evaluate the objective function at each vertex.</p></li>
+      <li><p>Select the vertex with the optimal (max or min) value.</p></li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li><p><strong>Example:</strong> Maximize \( F = 4x - y \)</p></li>
+  <li>
+    <p><strong>Subject to:</strong></p>
+    <ul>
+      <li><p>\( 2x + 3y \geq 6 \)</p></li>
+      <li><p>\( 2x - 3y \leq 6 \)</p></li>
+      <li><p>\( y \leq 2 \)</p></li>
+    </ul>
+  </li>
+  <li><p>Draw the graphs of constraints, find feasible region, and compute \( F \) at each vertex.</p></li>
+</ul>
+<div class="graph-container">
+ <div id="graph1"></div>
+</div>
+<script>
+  const board = JXG.JSXGraph.initBoard('graph1', {
+    boundingbox: [-2, 6, 10, -2],
+    axis: true
+  });
+
+  // Constraint lines
+  const l1 = board.create('line', [[0, 2], [3, 0]], {
+    name: '2x + 3y = 6',
+    strokeColor: 'blue'
+  });
+  const l2 = board.create('line', [[0, -2], [3, 4]], {
+    name: '2x - 3y = 6',
+    strokeColor: 'green'
+  });
+  const l3 = board.create('line', [[-2, 2], [10, 2]], {
+    name: 'y = 2',
+    strokeColor: 'red'
+  });
+
+  // Axes restrictions (x ≥ 0, y ≥ 0)
+  const yAxis = board.create('line', [[0, -2], [0, 6]], {visible: false});
+  const xAxis = board.create('line', [[-2, 0], [10, 0]], {visible: false});
+
+  // Intersection points (feasible region)
+  const A = board.create('point', [0, 2], {name: 'A', size: 2, fixed: true});
+  const B = board.create('intersection', [l1, l3, 0], {name: 'B', size: 2, fixed: true});
+  const C = board.create('intersection', [l1, l2, 0], {name: 'C', size: 2, fixed: true});
+  const D = board.create('intersection', [l2, l3, 0], {name: 'D', size: 2, fixed: true});
+
+  // Polygon for feasible region
+  board.create('polygon', [A, B, C, D], {
+    borders: {strokeColor: '#000'},
+    fillColor: 'lightblue',
+    fillOpacity: 0.3
+  });
+</script>
+
+                    </article>
+
+                    <article class="has-images">
+                        <h2>Exercises</h2>
+                        <p>Here are the exclusive hand-written
+                            exercise for the chapter. <b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer4" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+
+                    </article>
+                </section>
+
+                 <section id="lesson5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.5</span></li>
+                        </ol>
+                    </nav>
+
+                    <article>
+                        <p class="lesson-title">Algebra: Quadratic Equations and Graphs</p>
+                        <h2>Definitions and formulae</h2>
+        <div class="image-holder">
+            <img src="https://mathbooks.unl.edu/PreCalculus/images/fig-parabola-diagram.svg" alt="">
+        </div>
+    <ul>
+        <li><p><strong>Quadratic Function</strong>: A function defined as \(y = ax^2 + bx + c\), where \(a\), \(b\), and \(c\) are coefficients of \(x^2\), \(x\), and the constant term, respectively. The coefficient \(a\) cannot be zero.</p></li>
+        <li><p><strong>Parabola</strong>: The graph of a quadratic function.</p></li>
+        <li><p><strong>Vertex of Parabola</strong>: The turning point of the parabola.</p></li>
+        <li><p><strong>Line / Axis of Symmetry</strong>: A line that divides the parabola into two identical parts. For a quadratic function \(y = ax^2 + bx + c\), the line of symmetry is parallel to the y-axis.</p></li>
+    </ul>
+
+<h3>Formulae</h3>
+    <ul>
+        <li><p><strong>General Form of Quadratic Function</strong>: \(y = ax^2 + bx + c\).</p></li>
+        <li><p><strong>Vertex Form of Quadratic Function</strong>: \(f(x) = a(x - h)^2 + k\).</p></li>
+        <li><p><strong>Coordinates of the Vertex (h, k)</strong>: \(h = -\frac{b}{2a}\) and \(k = \frac{4ac - b^2}{4a}\). Therefore, the vertex is \((-\frac{b}{2a}, \frac{4ac - b^2}{4a})\).</p></li>
+        <li><p><strong>Equation of the Line of Symmetry</strong>: \(x = -\frac{b}{2a}\).</p></li>
+        <li><p><strong>Direction of Parabola's Opening</strong>:</p>
+            <ul>
+                <li><p>If \(a > 0\), the parabola turns upward from the vertex.</p></li>
+                <li><p>If \(a < 0\), the parabola turns downward from the vertex.</p></li>
+            </ul>
+        </li>
+    </ul>
+
+                       
+                    </article>
+
+                    <article class="has-images">
+                        <h2>Exercises</h2>
+                        <p>Here are the exclusive hand-written
+                            exercise for the chapter. <b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer5" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+
+                    </article>
+                </section>
+
+                <section id="lesson7">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Optional Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">3</span></li>
+                        </ol>
+                    </nav>
+                      <article>
+                        <p class="lesson-title">Matrices [Linear Algebra]</p>
+            
+                        <h2>Definitions and formulae</h2>
+                  
+    <p><h3>Definitions:</h3></p>
+    <ul>
+        <li><p><strong>Determinant of a Matrix</strong>: A function that associates each square matrix with a number.</p></li>
+        <li><p><strong>Singular Matrix</strong>: A matrix whose determinant is zero.</p></li>
+        <li><p><strong>Inverse of a Matrix</strong>: For an \(n \times n\) matrix \(A\), if there exists a matrix \(B\) such that \(AB = I = BA\) (where \(I\) is the identity matrix), then \(B\) is the inverse of \(A\). \(B\) is denoted as \(A^{-1}\), and \(A\) is denoted as \(B^{-1}\).</p></li>
+    </ul>
+
+
+    <p><h3>Formulae and Key Concepts:</h3></p>
+    <ul>
+        <li><p><strong>Notation for Determinant</strong>: The determinant of a matrix \(A\) is denoted by \(det(A)\), \(|A|\), or \(\Delta\).</p></li>
+        <li><p><strong>Determinant of a 1x1 Matrix</strong>:<br>If \(A = [a_{11}]\) is a square matrix of order \(1 \times 1\), then \(det(A) = a_{11}\).</p></li>
+        <li><p><strong>Determinant of a 2x2 Matrix</strong>:<br>If \(A = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}\), then the determinant of \(A\) is given by:<br>\(|A| = a_{11}a_{22} - a_{21}a_{12}\) (Product of elements on the leading diagonal minus the product of elements on the secondary diagonal).</p></li>
+        <li><p><strong>Inverse of a 2x2 Matrix</strong>:<br>If \(A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}\), then the inverse of \(A\) is:<br>\(A^{-1} = \frac{1}{|A|} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}\).<br>This can be found by interchanging the elements of the leading diagonal, changing the sign of the elements of the secondary diagonal, and dividing the resulting matrix by the determinant of the given matrix.</p></li>
+        <li><p><strong>Condition for Existence of Inverse</strong>:<br>The inverse of a matrix \(A\) exists if and only if \(|A|\) ≠ \(0\), meaning \(A\) must be a non-singular matrix.</p></li>
+    </ul>
+
+                </article>
+              <article class="has-images">
+                        <h2>Exercises</h2>
+                        <p>Here are the exclusive hand-written
+                            exercise for the chapter. <b>Please let us know if you find any errors.</b> </p>
+                        <div id="imageContainer7" class="image-container">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+            </article>
+                    
+                </section>
+
+                <br><br><br>
+                <footer id="footer">
+                    Copyright &copy; <strong>Bhukka Notes</strong> (2025-2027).
+                    All rights reserved.
+                </footer>
+            </div>
+        </section>
+        
+
+        <div id="lightbox" class="hidden">
+            <span id="closeBtn">&times;</span>
+            <img id="lightboxImage" src alt="Large image">
+            <div id="navButtons">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+        <script>
+        const folders = ['1.1', '1.2', '1.3', '1.4', '1.5', '2', '3', '4', '5', '6', '7', '8'];
+        const imageCounts = [21, 26, 54, 16, 12, 100, 28, 121, 148, 207, 237, 253];
+        const images = {};
+        for (let i = 0; i < folders.length; i++) {
+            const folder = folders[i];
+            const count = imageCounts[i];
+            images[`lesson${i + 1}`] = Array.from({ length: count }, (_, j) =>
+                `https://bhukka.sirv.com/Optional-Maths/${folder}/Page%20(${j + 1}).jpg`
+            );}
+
+            
+document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+        delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false }
+        ]
+    });
+});
+        </script>
+        <script src="../JS/lesson-selected.js"></script>
+    </body>
+</html>

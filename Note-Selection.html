@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bhukka Notes - Share, discover and collaborate on academic notes. Access exclusive tools like GPA calculator, photo size reducer, and Nepali keyboard." />
+  <meta name="keywords" content="notes sharing, academic notes, study resources, GPA calculator, Nepali keyboard" />
+  <meta name="author" content="Bhukka Notes Team" />
+  <title>Bhukka Notes • Subjects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/CSS/common.css" />
+  <link rel="stylesheet" href="/CSS/note-selection.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="/images/logo.png" alt="Bhukka Notes Logo" />
+        <h2>Bhukka Notes</h2>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="active" href="#notes">Notes</a></li>
+          <li><a href="/index.html#tools">Tools</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li><a class="support" href="support.html">Support Us</a></li>
+
+        </ul>
+      
+        <button class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <section>
+    <div class="pgcontainer">
+      <p class="page-title">
+        Welcome to the <span>SEE Notes</span> Section
+      </p>
+      <p class="description">
+        Select your subject to continue
+      </p>
+      <div class="card-container">
+        <div class="card" onclick="window.location.href='./subjects/English.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>English</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/Nepali.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>नेपाली</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/CMath.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Comp. Math</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/Science.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Comp. Science</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/Samajik.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>सामाजिक अध्ययन</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/OMath.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Opt. Math</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/Computer.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Computer Sci.</h3>
+        </div>
+
+        <div class="card" onclick="window.location.href='./subjects/Accounts.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Accounts</h3>
+        </div>
+        <div class="card" onclick="window.location.href='./subjects/EnglishII.html'">
+          <div class="card-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>OL English</h3>
+        </div>
+        <!-- card container ends here  -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+
+  <footer>
+    <p>© 2025 Bhukka Notes | <a href="#">Back to Home</a></p>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    mobileNavToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      const icon = mobileNavToggle.querySelector("i");
+      if (icon.classList.contains("fa-bars")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

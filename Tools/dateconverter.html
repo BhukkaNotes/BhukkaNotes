@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhukka Notes - Share, discover and collaborate on academic notes. Access exclusive tools like GPA calculator, photo size reducer, and Nepali keyboard."
+    />
+    <meta
+      name="keywords"
+      content="notes sharing, academic notes, study resources, GPA calculator, Nepali keyboard"
+    />
+    <meta name="author" content="Bhukka Notes Team" />
+    <title>Bhukka Notes - Share Knowledge, Excel Together</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/dateconverter.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/CSS/common.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Bhukka Notes Logo" />
+
+          <h1>Bhukka Notes</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#notes">Notes</a></li>
+            <li><a href="/index.html#tools">Tools</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search notes..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="toolcontainer">
+      <h1>Nepali Date Converter</h1>
+      <p class="subtitle">
+        Easily convert dates between Bikram Sambat (BS) and Gregorian (AD)
+        calendars
+      </p>
+
+      <div class="converter-container">
+        <!-- BS to AD Converter -->
+        <div class="converter-box">
+          <h2 class="converter-title">BS to AD (Nepali to English)</h2>
+          <div class="input-group">
+            <div class="input-field">
+              <label for="bs-year">Year (साल)</label>
+              <input
+                class="inputs"
+                type="number"
+                id="bs-year"
+                min="2000"
+                max="2090"
+                placeholder="2080"
+              />
+            </div>
+            <div class="input-field">
+              <label for="bs-month">Month (महिना)</label>
+              <select id="bs-month">
+                <option value="1">Baisakh (बैशाख)</option>
+                <option value="2">Jestha (जेठ)</option>
+                <option value="3">Asar (असार)</option>
+                <option value="4">Shrawan (श्रावण)</option>
+                <option value="5">Bhadra (भाद्र)</option>
+                <option value="6">Ashwin (आश्विन)</option>
+                <option value="7">Kartik (कार्तिक)</option>
+                <option value="8">Mangsir (मंसिर)</option>
+                <option value="9">Poush (पौष)</option>
+                <option value="10">Magh (माघ)</option>
+                <option value="11">Falgun (फाल्गुन)</option>
+                <option value="12">Chaitra (चैत्र)</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="bs-day">Day (गते)</label>
+              <input
+                class="inputs"
+                type="number"
+                id="bs-day"
+                min="1"
+                max="32"
+                placeholder="15"
+              />
+            </div>
+          </div>
+          <button class="gobutton" id="convert-to-ad">Convert to AD</button>
+          <div id="ad-result" class="result">Result will appear here</div>
+          <div id="bs-error" class="error"></div>
+        </div>
+
+        <!-- AD to BS Converter -->
+        <div class="converter-box">
+          <h2 class="converter-title">AD to BS (English to Nepali)</h2>
+          <div class="input-group">
+            <div class="input-field">
+              <label for="ad-year">Year</label>
+              <input
+                class="inputs"
+                type="number"
+                id="ad-year"
+                min="1944"
+                max="2033"
+                placeholder="2023"
+              />
+            </div>
+            <div class="input-field">
+              <label for="ad-month">Month</label>
+              <select id="ad-month">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="ad-day">Day</label>
+              <input
+                class="inputs"
+                type="number"
+                id="ad-day"
+                min="1"
+                max="31"
+                placeholder="15"
+              />
+            </div>
+          </div>
+          <button class="gobutton" id="convert-to-bs">Convert to BS</button>
+          <div id="bs-result" class="result">Result will appear here</div>
+          <div id="ad-error" class="error"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2025 Bhukka Notes | <a href="#">Back to Home</a></p>
+    </footer>
+    <script src="/JS/dateconverter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bhukka Notes - Share, discover and collaborate on academic notes. Access exclusive tools like GPA calculator, photo size reducer, and Nepali keyboard."
+    />
+    <meta
+      name="keywords"
+      content="notes sharing, academic notes, study resources, GPA calculator, Nepali keyboard"
+    />
+    <meta name="author" content="Bhukka Notes Team" />
+    <title>Bhukka Notes - Share Knowledge, Excel Together</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/gpacalc.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/CSS/common.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Bhukka Notes Logo" />
+          <h1>Bhukka Notes</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#notes">Notes</a></li>
+            <li><a href="/index.html#tools">Tools</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search notes..." />
+            <button class="button" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <center>
+        <h1>GPA Calculator</h1>
+        <p class="subtitle">
+          Easily calculate your GPA while maintaining accurate credit hour
+          distribution for theory and practical.
+        </p>
+      </center>
+
+      <div class="table-container">
+        
+      <div class="card">
+        <div class="subject-header">
+          <div>Subject</div>
+          <div>Theory Credit</div>
+          <div>Theory Grade</div>
+          <div>Practical Credit</div>
+          <div>Practical Grade</div>
+          <div></div>
+        </div>
+
+        <div class="subjects-container" id="subjects-container">
+          <!-- Subjects will be added here dynamically -->
+        </div>
+
+        <div class="actions">
+          <button class="button" id="add-subject-btn">Add Subject</button>
+          <button class="button" id="calculate-btn">
+            Calculate & Print GPA
+          </button>
+        </div>
+      </div>
+      </div>
+
+      <div class="result-card" id="result-card">
+        <div class="result-header">
+          <h2 class="result-title">GPA Grade Sheet</h2>
+          <button class="button" class="download-btn" id="download-btn">
+            Download
+          </button>
+        </div>
+
+       <div class="table-container">
+         <table id="result-table">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Theory Credit</th>
+              <th>Theory Grade</th>
+              <th>Practical Credit</th>
+              <th>Practical Grade</th>
+              <th>Overall Grade</th>
+            </tr>
+          </thead>
+          <tbody id="result-body">
+            <!-- Results will be added here -->
+          </tbody>
+        </table>
+       </div>
+
+        <div class="summary">
+          <div>
+            <h3>Total Credit Hours: <span id="total-credit-hours">0</span></h3>
+            <h3>
+              Total Quality Points: <span id="total-quality-points">0</span>
+            </h3>
+          </div>
+          <div style="display: flex; align-items: center">
+            <div>
+              <div>Your GPA</div>
+              <div class="gpa-display" id="final-gpa">0.00</div>
+            </div>
+            <div>
+              <div>Final Grade</div>
+              <div class="grade-display" id="final-grade">N/A</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Bhukka Notes | <a href="#">Back to Home</a></p>
+    </footer>
+    <script src="/JS/gpacalc.js"></script>
+  </body>
+</html>

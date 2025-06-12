@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bhukka Notes - Educational Platform</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../CSS/lesson-selected.css">
+        <link rel="stylesheet" href="../CSS/navsearchfoot.css">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5777285106519097"
+     crossorigin="anonymous"></script>
+    </head>
+    <body class="mybody">
+        <header>
+            <div class="container">
+                <div class="header-content">
+
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="Bhukka Notes Logo" />
+                        <div class="logo-text"
+                            style="color: #1e88e5; font-size: 24px;">Bhukka
+                            Notes</div>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#" class="active">Notes</a></li>
+                        <li><a href="../index.html#tools">Tools</a></li>
+                    </ul>
+
+                    <div class="bars-search">
+                        <div class="search-container"
+                            style="position: relative;">
+                            <input type="text" id="search-input"
+                                placeholder="Search notes..." />
+                            <button id="search-button"><i
+                                    class="bi bi-search"></i></button>
+                        </div>
+
+                        <div onclick="toggleMobileMenu()" class="bars">
+                            <svg id="bars-icon" style="width:30px;height:30px"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                            </svg>
+                            <svg id="close-icon" class="dp-none"
+                                xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+                                    fill="#1e88e5" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-nav dp-none">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#" class="active">Notes</a></li>
+                <li><a href="../index.html#tools">Tools</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <div class="left"> <h2 class="subject-name">
+                    Compulsary Math
+                    <span class="view-all">
+                        <a href="../Note-Selection.html">View All ⮞</a>
+                    </span>
+                </h2>
+                <ul class="lesson-list">
+                    <li>
+                        <span class="lesson-number">01</span>
+                        <a href="#lesson1">Sets</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">02</span>
+                        <a href="#lesson2">Compound Interest</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">03</span>
+                        <a href="#lesson3">Growth and Depreciation</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">04</span>
+                        <a href="#lesson4">Currency and Exchange Rate</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">05</span>
+                        <a href="#lesson5">Area and Volume</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">06</span>
+                        <a href="#lesson6">Sequence and Series</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">07</span>
+                        <a href="#lesson7">Quadratic Equation</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">08</span>
+                        <a href="#lesson8">Algebraic Fraction</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">09</span>
+                        <a href="#lesson9">Indices</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">10</span>
+                        <a href="#lesson10">Triangles and Quadrilaterals</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">11</span>
+                        <a href="#lesson11">Construction</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">12</span>
+                        <a href="#lesson12">Circle</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">13</span>
+                        <a href="#lesson13">Statistics</a>
+                    </li>
+                    <li>
+                        <span class="lesson-number">14</span>
+                        <a href="#lesson14">Probability</a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="right">
+                <section id="lesson1">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Compulsary Math</a></li>
+                            <li class="active">Exercise <span
+                                    id="lesson-number">1.1</span></li>
+                        </ol>
+                    </nav>
+                    <article>
+                        <h1>Sets - Exercise 1.1 Solutions</h1>
+
+                        <h2>Problem 1</h2>
+
+                        <div class="problem">
+                            <h3>Part (a): Present the cardinality of sets with
+                                examples</h3>
+                            <p>Present the cardinality of sets with examples and
+                                show it to your teacher.</p>
+                        </div>
+
+                        <div class="solution">
+                            <h3>Solution:</h3>
+                            <p><strong>Cardinality of a Set:</strong> The
+                                cardinality of a set is the number of elements
+                                in that set. It is denoted by \( n(A) \) or \(
+                                |A| \).</p>
+
+                            <div class="example">
+                                <h4>Examples:</h4>
+                                <ul>
+                                    <li><strong>Set A = {1, 2, 3, 4,
+                                            5}</strong><br>
+                                        Cardinality: \( n(A) = 5 \)</li>
+                                    <li><strong>Set B = {a, b, c}</strong><br>
+                                        Cardinality: \( n(B) = 3 \)</li>
+                                    <li><strong>Set C = {red, blue, green,
+                                            yellow}</strong><br>
+                                        Cardinality: \( n(C) = 4 \)</li>
+                                    <li><strong>Empty Set ∅ = { }</strong><br>
+                                        Cardinality: \( n(∅) = 0 \)</li>
+                                    <li><strong>Set D = {x | x is a vowel in
+                                            English}</strong><br>
+                                        D = {a, e, i, o, u}, so \( n(D) = 5
+                                        \)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="problem">
+                            <h3>Part (b): For two sets A and B, A ⊂ B, find the
+                                values of n(A∪B) and n(A∩B)</h3>
+                        </div>
+
+                        <div class="solution">
+                            <h3>Solution:</h3>
+                            <p>When A ⊂ B (A is a subset of B), this means every
+                                element of A is also in B.</p>
+
+                            <div class="formula-box">
+                                <p><strong>Key Properties when A ⊂
+                                        B:</strong></p>
+                                <div class="math-content">
+                                    \[ A \cap B = A \text{ (since all elements
+                                    of A are in B)} \]
+                                    \[ A \cup B = B \text{ (since A is
+                                    completely contained in B)} \]
+                                </div>
+                            </div>
+
+                            <div class="answer">
+                                <p><strong>Therefore:</strong></p>
+                                <ul>
+                                    <li>\( n(A \cup B) = n(B) \)</li>
+                                    <li>\( n(A \cap B) = n(A) \)</li>
+                                </ul>
+                            </div>
+
+                            <div class="example">
+                                <h4>Example:</h4>
+                                <p>Let A = {1, 2, 3} and B = {1, 2, 3, 4, 5,
+                                    6}</p>
+                                <p>Since A ⊂ B:</p>
+                                <ul>
+                                    <li>\( A \cap B = \{1, 2, 3\} = A \), so \(
+                                        n(A \cap B) = 3 = n(A) \)</li>
+                                    <li>\( A \cup B = \{1, 2, 3, 4, 5, 6\} = B
+                                        \), so \( n(A \cup B) = 6 = n(B) \)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="problem">
+                            <h3>Part (c): If A and B are overlapping sets, state
+                                the formula for n(A∪B)</h3>
+                        </div>
+
+                        <div class="solution">
+                            <h3>Solution:</h3>
+                            <p>When two sets A and B are overlapping (they have
+                                some common elements), we use the
+                                inclusion-exclusion principle.</p>
+
+                            <div class="formula-box">
+                                <div class="math-content">
+                                    \[ n(A \cup B) = n(A) + n(B) - n(A \cap B)
+                                    \]
+                                </div>
+                                <p><strong>Alternative form:</strong></p>
+                                <div class="math-content">
+                                    \[ n(A \cup B) = n^o(A) + n^o(B) + n(A \cap
+                                    B) \]
+                                </div>
+                                <p>where \( n^o(A) \) represents elements only
+                                    in A, and \( n^o(B) \) represents elements
+                                    only in B.</p>
+                            </div>
+
+                            <div class="example">
+                                <h4>Example:</h4>
+                                <p>Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6}</p>
+                                <ul>
+                                    <li>\( n(A) = 4 \)</li>
+                                    <li>\( n(B) = 4 \)</li>
+                                    <li>\( A \cap B = \{3, 4\} \), so \( n(A
+                                        \cap B) = 2 \)</li>
+                                    <li>\( A \cup B = \{1, 2, 3, 4, 5, 6\}
+                                        \)</li>
+                                </ul>
+                                <p>Using the formula: \( n(A \cup B) = 4 + 4 - 2
+                                    = 6 \) ✓</p>
+                            </div>
+                        </div>
+
+                        <div class="problem">
+                            <h3>Part (d): There are 12 and 8 elements in sets A
+                                and B respectively. Find the minimum number of
+                                elements in n(A∪B)</h3>
+                        </div>
+
+                        <div class="solution">
+                            <h3>Solution:</h3>
+                            <p>Given: \( n(A) = 12 \) and \( n(B) = 8 \)</p>
+
+                            <p>Using the formula: \( n(A \cup B) = n(A) + n(B) -
+                                n(A \cap B) \)</p>
+
+                            <div class="math-content">
+                                \[ n(A \cup B) = 12 + 8 - n(A \cap B) = 20 - n(A
+                                \cap B) \]
+                            </div>
+
+                            <p>To minimize \( n(A \cup B) \), we need to
+                                maximize \( n(A \cap B) \).</p>
+
+                            <p>The maximum value of \( n(A \cap B) \) is limited
+                                by the smaller set, so:</p>
+                            <div class="math-content">
+                                \[ n(A \cap B) \leq \min(n(A), n(B)) = \min(12,
+                                8) = 8 \]
+                            </div>
+
+                            <p>Therefore, the minimum value of \( n(A \cup B) \)
+                                is:</p>
+                            <div class="math-content">
+                                \[ n(A \cup B)_{\min} = 20 - 8 = 12 \]
+                            </div>
+
+                            <div class="answer">
+                                <p><strong>Answer: The minimum number of
+                                        elements in A∪B is 12.</strong></p>
+                            </div>
+
+                            <div class="example">
+                                <h4>Explanation:</h4>
+                                <p>This occurs when set B is completely
+                                    contained within set A (B ⊂ A), meaning all
+                                    8 elements of B are also in A.</p>
+                            </div>
+                        </div>
+
+                        <h2>Problem 2</h2>
+
+                        <div class="problem">
+                            <p>In the given Venn-diagram, 80 people are in set
+                                M, 90 people are in set E and 15 people are not
+                                in both the sets. The diagram shows values 20,
+                                60, 30, 15.</p>
+                            <p>Determine the cardinality of following sets:</p>
+                            <div id="venn2" class="venn-diagram"></div> <ol
+                                type="a">
+                                <li>\( n^o(M) \)</li>
+                                <li>\( n^o(E) \)</li>
+                                <li>\( n(M) \)</li>
+                                <li>\( n(E) \)</li>
+                                <li>\( n(M \cup E) \)</li>
+                                <li>\( n(M \cap E) \)</li>
+                                <li>\( n(\overline{M \cup E}) \)</li>
+                                <li>\( n(U) \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="solution">
+                            <h3>Solution:</h3>
+                            <p>From the Venn diagram, we can identify:</p>
+                            <ul>
+                                <li>Only in M: 20 people</li>
+                                <li>In both M and E: 60 people</li>
+                                <li>Only in E: 30 people</li>
+                                <li>In neither M nor E: 15 people</li>
+                            </ul>
+
+                            <div class="answer">
+                                <ol type="a">
+                                    <li>\( n^o(M) = 20 \) (people only in
+                                        M)</li>
+                                    <li>\( n^o(E) = 30 \) (people only in
+                                        E)</li>
+                                    <li>\( n(M) = 20 + 60 = 80 \) (total in
+                                        M)</li>
+                                    <li>\( n(E) = 30 + 60 = 90 \) (total in
+                                        E)</li>
+                                    <li>\( n(M \cup E) = 20 + 60 + 30 = 110 \)
+                                        (in M or E or both)</li>
+                                    <li>\( n(M \cap E) = 60 \) (in both M and
+                                        E)</li>
+                                    <li>\( n(\overline{M \cup E}) = 15 \) (not
+                                        in M or E)</li>
+                                    <li>\( n(U) = 20 + 60 + 30 + 15 = 125 \)
+                                        (total universal set)</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <script>
+        // Configure MathJax
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+
+        // Create Venn diagram for Problem 2
+        function createVennDiagram2() {
+            const board = JXG.JSXGraph.initBoard('venn2', {
+                boundingbox: [-6, 6, 6, -6],
+                axis: false,
+                showNavigation: false,
+                showCopyright: false,
+                pan: {enabled: false},
+                zoom: {enabled: false},
+                keyboard: {enabled: false},
+                pointer: {enabled: false}
+            });
+
+            // Create the universal set rectangle
+            const rect = board.create('polygon', [[-5, 5], [5, 5], [5, -5], [-5, -5]], {
+                fillColor: '#f0f8ff',
+                fillOpacity: 0.3,
+                strokeColor: '#000',
+                strokeWidth: 2,
+                fixed: true
+            });
+
+            // Create circle M
+            const circleM = board.create('circle', [[-1.5, 0], 2], {
+                fillColor: '#ffcccc',
+                fillOpacity: 0.5,
+                strokeColor: '#ff0000',
+                strokeWidth: 2,
+                fixed: true
+            });
+
+            // Create circle E
+            const circleE = board.create('circle', [[1.5, 0], 2], {
+                fillColor: '#ccffcc',
+                fillOpacity: 0.5,
+                strokeColor: '#00aa00',
+                strokeWidth: 2,
+                fixed: true
+            });
+
+            // Add labels
+            board.create('text', [-2.5, 2.5, 'M'], {fontSize: 16, fontWeight: 'bold', fixed: true});
+            board.create('text', [2.5, 2.5, 'E'], {fontSize: 16, fontWeight: 'bold', fixed: true});
+            board.create('text', [-4.5, 4.5, 'U'], {fontSize: 16, fontWeight: 'bold', fixed: true});
+
+            // Add numbers
+            board.create('text', [-2.5, 0, '20'], {fontSize: 14, fontWeight: 'bold', color: '#000', fixed: true});
+            board.create('text', [0, 0, '60'], {fontSize: 14, fontWeight: 'bold', color: '#000', fixed: true});
+            board.create('text', [2.5, 0, '30'], {fontSize: 14, fontWeight: 'bold', color: '#000', fixed: true});
+            board.create('text', [-4, -4, '15'], {fontSize: 14, fontWeight: 'bold', color: '#000', fixed: true});
+        }
+
+        // Initialize diagrams after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            createVennDiagram2();
+        });
+    </script>
+                    </article>
+                </section>
+                
+                <section id="lesson2">
+                    <article></article>
+                </section>
+                <br><br><br>
+
+                <footer id="footer">
+                    Copyright &copy; <strong>Bhukka Notes</strong> (2025-2027).
+                    All rights reserved.
+                </footer>
+            </div>
+        </section>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.css">
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+        <script src="../JS/lesson-selected.js"></script>
+
+    </body>
+</html>
